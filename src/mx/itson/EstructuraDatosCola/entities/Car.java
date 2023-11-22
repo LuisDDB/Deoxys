@@ -9,33 +9,35 @@ package mx.itson.EstructuraDatosCola.entities;
  * @author luisd
  */
 public class Car {
+    private int id;
     private String matricula;
     private String modelo;
     private boolean legalizado;
     private String marca;
-    private String año;
+    private String year;
     private String kilometraje;
 
     /**
-     * Constructor de Car
-     * 
+     * Constructor
+     * @param id id del carro
      * @param matricula matricula del carro
      * @param modelo modelo del carro
      * @param legalizado legalidad del carro
      * @param marca marca del carro
-     * @param año año del carro
-     * @param kilometraje kilometraje del carro
-     * 
-     * 
+     * @param año year del carro
+     * @param kilometraje 
      */
-    public Car(String matricula, String modelo, boolean legalizado, String marca, String año, String kilometraje) {
+    public Car(int id, String matricula, String modelo, boolean legalizado, String marca, String año, String kilometraje) {
+        this.id = id;
         this.matricula = matricula;
         this.modelo = modelo;
         this.legalizado = legalizado;
         this.marca = marca;
-        this.año = año;
+        this.year = año;
         this.kilometraje = kilometraje;
     }
+
+    
     
     
 
@@ -96,17 +98,17 @@ public class Car {
     }
 
     /**
-     * @return the año
+     * @return the year
      */
     public String getAño() {
-        return año;
+        return year;
     }
 
     /**
-     * @param año the año to set
+     * @param año the year to set
      */
     public void setAño(String año) {
-        this.año = año;
+        this.year = año;
     }
 
     /**
@@ -121,6 +123,20 @@ public class Car {
      */
     public void setKilometraje(String kilometraje) {
         this.kilometraje = kilometraje;
+    }
+
+    /**
+     * @return the id
+     */
+    public int getId() {
+        return id;
+    }
+
+    /**
+     * @param id the id to set
+     */
+    public void setId(int id) {
+        this.id = id;
     }
     
     
